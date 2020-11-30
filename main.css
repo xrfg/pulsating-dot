@@ -15,7 +15,8 @@ body {
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
 
-  animation: pulse 0.8s ease-out infinite forwards;
+  position: relative;
+  animation: pulse 0.8s 0.1s ease-out infinite forwards;
 }
 
 @keyframes pulse {
@@ -31,6 +32,27 @@ body {
 
   100% {
     transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.small-dot {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+
+  animation: small 0.8s infinite ease-out forwards;
+}
+
+@keyframes small {
+  0% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(3);
     opacity: 0;
   }
 }
