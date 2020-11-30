@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: rgb(165, 117, 255);
+}
+
+.dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
